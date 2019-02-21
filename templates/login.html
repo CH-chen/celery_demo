@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+			<div class="form_input" >
+					<form method="post" action="">
+                        {% csrf_token %}
+						<input type="text" name="username" class="name_input" placeholder="请输入用户名">
+						<div class="user_error">输入错误</div>
+						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
+						<div class="pwd_error">输入错误</div>
+						<div class="more_input clearfix">
+							<input type="checkbox" name="">
+							<label>记住用户名</label>
+							<a href="#">忘记密码</a>
+						</div>
+						<input type="submit" name="" value="登录" class="input_submit">
+					</form>
+</body>
+</html>
